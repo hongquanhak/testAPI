@@ -14,9 +14,14 @@ app.use(bodyParser.json())
 let routes = require('./api/routes.js') //importing route - load tat ca routes da duoc khai bao trong file
 routes(app)
 
+app.get('/products/:date', (req, res) => {
+    res.send('' + req.params.date);
+})
+
 app.use((req, res) => {
     res.status(404).send({url: req.originalUrl + ' not found'})
 })
+
 
 app.listen(port)
 
