@@ -2,7 +2,7 @@
 module.exports = function(app) {
   let getApi = require('./controllers/ProductsController')
   let getLatestDate = require('./controllers/LatestDate');
-  let getFormatDate = require('./controllers/FormatDate');
+  let getAnyDate = require('./controllers/AnyDate');
   let getSortDate = require('./controllers/SortDate')
 
   // todoList Routes
@@ -11,7 +11,7 @@ module.exports = function(app) {
   app.route('/products/latests')
     .get(getLatestDate.get);
   app.route('/products/formats')
-    .get(getFormatDate.get);
+    .get(getAnyDate.get);
   app.route('/products/sorts')
     .get(getSortDate.get);
 }
