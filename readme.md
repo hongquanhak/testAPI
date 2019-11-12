@@ -20,9 +20,9 @@ $ npm start
 $ yarn start
 ```
 # Including APIs
-- Endpoint: Get the rates with latest date.
-- Endpoint: Get the rates with any date.
-- Endpoint: Get (min, max, avg) of each type of cube.
+- Endpoint: /products/latests: Get the rates with latest date.
+- Endpoint: /products/formats: Get the rates with any date.
+- Endpoint: /products/sort: Get (min, max, avg) of each type of cube.
 
 # License
 - This project is licensed under the **[MIT license](http://opensource.org/licenses/mit-license.php)**

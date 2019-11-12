@@ -10,8 +10,8 @@ module.exports = function(app) {
     .get(getApi.get);
   app.route('/products/latests')
     .get(getLatestDate.get);
-  app.route('/products/formats')
-    .get(getAnyDate.get);
   app.route('/products/sort')
     .get(getSortDate.get);
+  app.route('/products/:date')
+    .get(getAnyDate.get);
 }
