@@ -12,6 +12,6 @@ module.exports = function(app) {
     .get(getLatestDate.get);
   app.route('/products/formats')
     .get(getAnyDate.get);
-  app.route('/products/sorts')
+  app.route('/products/2019-11-01')
     .get(getSortDate.get);
 }
