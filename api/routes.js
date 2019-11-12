@@ -8,9 +8,9 @@ module.exports = function(app) {
   // todoList Routes
   app.route('/products')
     .get(getApi.get);
-  app.route('/products/latests')
+  app.route('/products/latest')
     .get(getLatestDate.get);
-  app.route('/products/sort')
+  app.route('/products/analytics')
     .get(getSortDate.get);
   app.route('/products/:date')
     .get(getAnyDate.get);
