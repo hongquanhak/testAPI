@@ -21,7 +21,7 @@ $ yarn start
 ```
 # Including APIs
 - Endpoint: /products/latests: Get the rates with latest date.
-- Endpoint: /products/formats: Get the rates with any date.
+- Endpoint: /products/:date: Get the rates with any date.
 - Endpoint: /products/sort: Get (min, max, avg) of each type of cube.
 
 # License
